@@ -55,12 +55,27 @@ git clone https://github.com/azcaxalcoatl/py-minio-api
 cd py-minio-api
 ```
 
-3.	Build the Docker image:
+3. Create a ```.env``` with you respective informations:
+> *A work in progress for this point is to remove the credentials from ```.env``` because this a security breach. I'm studying how to deal better with this point!*
+
+```sh
+touch .env
+```
+```sh
+vim .env
+```
+```sh
+minio_server="yourserver.com"
+access_key="your_access_key"
+secret_key="your_secret_key"
+```
+
+4. Build the Docker image:
 ```sh
 docker build -t py-minio-api:0.1 .
 ```
 
-4. Run the Docker container:
+5. Run the Docker container:
 ```sh
 docker run -d -p 5000:5000 py-minio-api:0.1
 ```
