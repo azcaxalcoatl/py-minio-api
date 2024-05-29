@@ -4,12 +4,10 @@ A simple API utilizing MinIO SDK to fetch bucket data.
 This project provides a simple API to manage and monitor storage usage in MinIO buckets. It is designed to help users list all buckets and retrieve the storage usage of individual buckets, facilitating billing and management of storage space.
 
 ## Features
-
 - **List Buckets**: An endpoint to list all buckets created in the MinIO server.
 - **Bucket Usage**: An endpoint to retrieve the name and space used by a specified bucket in GB.
 
 ## Endpoints
-
 ### `/list_buckets`
 
 - **Method**: GET
@@ -31,7 +29,6 @@ This project provides a simple API to manage and monitor storage usage in MinIO 
 ```
 
 ### `/usage_bucket`
-
 - **Method**: POST
 - **Description**: Lists all buckets created in the MinIO server.
 - **Request Body**:
